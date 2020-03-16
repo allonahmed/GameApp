@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/title"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:fontFamily="serif"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fortuneteller"
+        android:layout_width="179dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="28dp"
+        android:background="#3F51B5"
+        android:text="Fortune Teller"
+        android:textColor="#FFFEFE"
+        android:onClick="displayMessage2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poem" />
+
+    <Button
+        android:id="@+id/MadLibs"
+        android:layout_width="151dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="39dp"
+        android:background="#3F51B5"
+        android:text="MadLibs"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:onClick="displayMessage4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lottery" />
+
+    <Button
+        android:id="@+id/poem"
+        android:layout_width="131dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="#3F51B5"
+        android:text="Poem"
+        android:onClick="displayMessage1"
+        android:textColor="#FBFBFC"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/Lottery"
+        android:layout_width="151dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="27dp"
+        android:background="#3F51B5"
+        android:onClick="displayMessage3"
+        android:text="Lottery"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fortuneteller" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
